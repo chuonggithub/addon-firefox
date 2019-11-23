@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Tulieumvga",
+  "description": "Giải mã tư liệu từ vozer",
+  "version": "2.2",
+
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+
+  "permissions": [
+    "contextMenus",
+    "menus",
+    "activeTab"
+  ],
+
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+
+  "browser_action": {
+  	"default_popup": "popup.html",
+    "default_title": "Encode Tư liệu",
+    "default_icon": "icons/32.png"
+  }
+
+}
